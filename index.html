@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeatSafe | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="Images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header start -->
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="Images/logo.png" alt="HeatSafe logo">
+            <span class="logo-name">HeatSafe</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
+        <nav id="site-nav">
+            <ul class="menu">
+                <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                <li><a href="whatisheatwave.html">What Is Heat Wave</a></li>
+                <li><a href="safetyguide.html">Safety Guide</a></li>
+                <li><a href="effects.html">Effects</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="home-contents">
+        <section class="home-box">
+            <div class="home-hero-text">
+                <h1 class="home-hero-heading">Beat The Heat<br>Stay Cool<br>Stay Safe Together</h1>
+                <p class="home-hero-paragraph">Heat waves last for days, and hot nights give your body no time to recover. <br>Learn the warning signs and how to keep your family safe.</p>
+                <div class="get-started">
+                    <a href="#levels">Get Started</a>
+                </div>
+            </div>
+            <img src="https://images.unsplash.com/photo-1757782032725-3fc6755d6c4d?auto=format&fit=crop&w=1200&q=80" alt="People walking down a sunny street under a water mist spray during a heat wave" class="hero-img">
+        </section>
+        <section class="levels-sec" id="levels">
+            <h2>How hot is too hot?</h2>
+            <p>Air temperature alone can mislead you. The heat index adds humidity to show how hot it feels in the shade. The US National Weather Service sorts it into four danger levels.</p>
+            <ol class="levels">
+                <li class="lv1"><h3>Caution</h3><p class="range">About 27 & 32C</p><p>Tiredness is possible after long exposure or hard activity.</p></li>
+                <li class="lv2"><h3>Extreme caution</h3><p class="range">About 33 & 39C</p><p>Heat cramps and heat exhaustion are possible.</p></li>
+                <li class="lv3"><h3>Danger</h3><p class="range">About 40 & 51C</p><p>Heat exhaustion is likely and heat stroke is possible. Limit time outdoors.</p></li>
+                <li class="lv4"><h3>Extreme danger</h3><p class="range">About 52C and above</p><p>Heat stroke is highly likely. Stay somewhere cool.</p></li>
+            </ol>
+            <p class="levels-note">Direct sunshine can make it feel several degrees hotter. Source: US National Weather Service heat index.</p>
+        </section>
+        <div class="emergency-note">
+            <h2>Heat stroke is an emergency</h2>
+            <p>If someone is confused, has slurred speech, has hot dry skin, or faints, call your local emergency number straight away. Move them somewhere cool and cool their skin with water or wet cloths. Do not give drinks to someone who is confused or unconscious.</p>
+        </div>
+    
+        <section class="checker" id="checker">
+            <h2>Heat Safety Checker</h2>
+            <p>Type the heat index (how hot it feels) in C and press the button.</p>
+            <input type="number" id="temp-input" placeholder="e.g. 35">
+            <button id="check-btn" type="button">Check</button>
+            <p id="check-result" class="check-result"></p>
+        </section>
+        <section class="checklist" id="checklist-section">
+            <h2>Heat Safety Checklist</h2>
+            <p>Tick each thing you have done today.</p>
+            <ul class="checklist-items">
+                <li><label><input type="checkbox"> I drank water, even when I was not thirsty</label></li>
+                <li><label><input type="checkbox"> I plan to stay out of the sun from 11 AM to 4 PM</label></li>
+                <li><label><input type="checkbox"> I have light, loose clothes and a hat ready</label></li>
+                <li><label><input type="checkbox"> I know the coolest place in my home or nearby</label></li>
+                <li><label><input type="checkbox"> I checked on an older neighbour or family member</label></li>
+            </ul>
+            <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+            <p id="checklist-progress"></p>
+            <p id="checklist-message"></p>
+            <button id="checklist-reset" type="button">Reset</button>
+        </section>
+        <section class="introduction" id="intro">
+            <div class="intro-text">
+                <h2>Introduction</h2>
+                <hr class="heading-underline">
+                <p>Welcome to our website, where you can learn about heat waves and how they affect our daily lives. A heat wave is a period of unusually hot weather that lasts for many days, often bringing temperatures much higher than normal. As the climate warms, heat waves are becoming more frequent, longer, and more intense in many parts of the world. Here, you can learn what causes heat waves, what dangers they bring, and how you can stay safe and protect your family, pets, and community during extreme heat.</p>
+                <ul class="intro-tags">
+                    <li>What causes heat waves</li>
+                    <li>The dangers they bring</li>
+                    <li>How to stay safe</li>
+                </ul>
+            </div>
+            <img src="https://images.unsplash.com/photo-1496728319214-2785f6d3061e?auto=format&fit=crop&w=1200&q=80" alt="A man squinting and shielding himself from the harsh sunlight" loading="lazy" class="first-image">
+        </section>
+        <hr class="line">
+
+        <section class="objective">
+            <div class="objective-box">
+                <div class="obj-text">
+                    <h2>Our Objective</h2>
+                    <hr>
+                    <p>Our aim is to raise awareness about the growing danger of heat waves and to help people understand how to stay safe during extreme heat. We want to encourage individuals, families, and communities to prepare in advance, recognize the warning signs of heat-related illness, and take simple but effective steps to protect themselves. By sharing clear information, we hope to reduce heat-related health problems and save lives. Everyone deserves to stay cool and safe, even when the temperature rises.</p>
+                </div>
+                <img src="https://images.unsplash.com/photo-1522046310824-b844b4b5806f?auto=format&fit=crop&w=1200&q=80" alt="Dry, cracked ground under a blazing sun" loading="lazy">
+            </div>
+        </section>
+
+        <hr class="line">
+        <section class="envro-box">
+            <h2>Why Heat Waves Matter</h2>
+            <hr class="heading-underline">
+            <div class="envro-contents">
+                <div class="envro-img">
+                    <img src="https://images.unsplash.com/photo-1560977501-7cb367eccebe?auto=format&fit=crop&w=1200&q=80" alt="A thermometer reading 41 degrees Celsius" loading="lazy">
+                    <div class="envro-text">
+                        <h3>Health Risk</h3>
+                        <p>Extreme heat can cause dehydration, heat exhaustion, and deadly heat stroke. Children, older adults, pregnant women, and people with health conditions are most at risk.</p>
+                    </div>
+                </div>
+                <div class="envro-img">
+                    <img src="https://images.unsplash.com/photo-1779449605263-b644365731ef?auto=format&fit=crop&w=1200&q=80" alt="A blazing sun over a city skyline" loading="lazy">
+                    <div class="envro-text">
+                        <h3>Rising Temperatures</h3>
+                        <p>Climate change is making heat waves hotter, longer, and more frequent. Cities are hit hardest because concrete and buildings trap heat, even at night.</p>
+                    </div>
+                </div>
+                <div class="envro-img">
+                    <img src="https://images.unsplash.com/photo-1615092296061-e2ccfeb2f3d6?auto=format&fit=crop&w=1200&q=80" alt="A wildfire burning across a hillside" loading="lazy">
+                    <div class="envro-text">
+                        <h3>Environmental Damage</h3>
+                        <p>Heat waves dry out soil, reduce water supplies, cause wildfires, and harm animals, plants, and entire ecosystems.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="learn-more">
+                <a href="whatisheatwave.html" class="learn-btn">Learn More</a>
+            </div>
+        </section>
+        <section class="community">
+            <div class="com-box">
+                <img src="https://images.unsplash.com/photo-1762955913084-96ea3f986468?auto=format&fit=crop&w=1200&q=80" alt="A caregiver looking after elderly women" loading="lazy">
+                <div class="com-text">
+                    <h2>Imagine if every neighbour checked on just one person during a heat wave…</h2>
+                    <p>If every neighbour checked on just one elderly person, child, or outdoor worker during a heat wave, countless lives could be saved. Small actions from many people can create a big positive impact — helping the whole community stay safe, hydrated, and cool. One small step from every person can lead to a meaningful difference during extreme heat.</p>
+                </div>
+            </div>
+        </section>
+        <section class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <hr>
+            <details class="faq-item">
+                <summary class="faq-q">What exactly is a heat wave?</summary>
+                <p class="faq-a">A heat wave is a period of abnormally hot weather that lasts for several days or longer, often with temperatures much higher than the usual average for that area and season.</p>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">Who is most at risk during a heat wave?</summary>
+                <p class="faq-a">Elderly people, infants and young children, pregnant women, outdoor workers, athletes, and people with chronic illnesses (such as heart or lung conditions) are at the highest risk.</p>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">What is the difference between heat exhaustion and heat stroke?</summary>
+                <p class="faq-a">Heat exhaustion causes heavy sweating, weakness, dizziness, headache, and nausea, but the person is still alert. Move them to a cool place, loosen their clothing, give small sips of water, and cool their skin with wet cloths. If they do not feel better within about an hour, get medical help. Heat stroke is a medical emergency — the body temperature rises above 40°C, the skin may be hot and dry, and the person may become confused or unconscious. Call your local emergency number immediately, and cool them down with water or wet cloths while you wait for help.</p>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">How much water should I drink during a heat wave?</summary>
+                <p class="faq-a">Drink water regularly throughout the day — even if you don't feel thirsty — and drink more if you are sweating heavily. Pale yellow urine is a good sign; dark yellow urine means you need more fluids. Avoid alcohol and sugary drinks. If a doctor has limited how much fluid you can drink (for example because of kidney or heart disease), ask them how much is safe for you.</p>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">What should I do if my home has no air conditioning?</summary>
+                <p class="faq-a">Close curtains during the day, open windows at night, use fans, take cool showers or apply damp cloths to your skin, wear light clothing, and visit a public cooling place (library, mall, community hall) for a few hours if you can. Fans alone are not enough when indoor temperatures are very high (above about 35°C).</p>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">What are the early warning signs of heat illness?</summary>
+                <p class="faq-a">Heavy sweating, muscle cramps, headache, dizziness, nausea, and unusual tiredness. If you notice these, stop what you are doing, move somewhere cool, and drink water.</p>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-q">What are the hottest hours of the day?</summary>
+                <p class="faq-a">Usually late morning to late afternoon, roughly 11 AM to 4 PM. Try to do outdoor tasks early in the morning or in the evening.</p>
+            </details>
+        </section>
+        <section class="en-box">
+            <div class="encouragement">
+                <h2>Stay Hydrated. Stay Safe.</h2>
+                <p>Together, we can beat the heat</p>
+                <img src="https://images.unsplash.com/photo-1600679472233-eabc13b79f07?auto=format&fit=crop&w=1200&q=80" alt="A man drinking water from a sports bottle" loading="lazy">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="links">
+            <div class="footer-logo">
+                <img src="Images/logo.png" alt="HeatSafe logo">
+                <h2>HeatSafe</h2>
+<div class="social-icons">
+<a href="https://www.tiktok.com/en/" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+<a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+<a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+<a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+</div>
+            </div>
+            <div class="both">
+                <div class="quick-links">
+                    <h3>Menu</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="whatisheatwave.html">What Is Heat Wave</a></li>
+                        <li><a href="safetyguide.html">Safety Guide</a></li>
+                        <li><a href="effects.html">Effects</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="quiz.html">Quiz</a></li>
+                        <li><a href="references.html">References</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contact-us">
+                <h3>Contact Us</h3>
+                <ul>
+<li>09-131 232 343</li>
+<li>09-313 323 434</li>
+<li>heatsafe@gmail.com</li>
+<li>Myanmar</li>
+</ul>
+            </div>
+        </div>
+        <hr class="horizontal">
+        <p class="copyright">@ Copyright <span id="year">2026</span> HeatSafe | All rights reserved</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
